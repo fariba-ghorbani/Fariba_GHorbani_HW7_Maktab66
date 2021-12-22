@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,300;1,200;1,300&family=Share+Tech+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    color: rgb(228, 228, 228);
+    background-color: black;
+}
+/* ============================================================== */
+/* header */
+
+header {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+    background-color: black;
+    border-bottom: orange solid 5px;
+    border-right: orange solid 5px;
+    border-left: orange solid 5px;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar label {
+    color: orange;
+    font-family: 'M PLUS 1 Code';
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 50px;
+}
+.navbar-items {
+    height: 100%;
+    text-align: center;
+    flex-basis: 70%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+    padding: 1rem;
+    height: 100%;
+    flex-basis: 20%;
+    font-family: 'Share Tech Mono';
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+
+.item:hover {
+    background-color: purple;
+    cursor: pointer;
+}
+
+.hamburger {
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 0 10px 0 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    margin-left: 5px; margin-right: 5px;
+    width: 25px;
+    height: 4px;
+    border-radius: 1px;
+    background-image: linear-gradient(45deg, rgb(194, 105, 22), rgb(255, 255, 255));
+}
+
+.bar2, .bar3 {
+    margin-top: 3px;
+}
+
+.bar1 {
+    width: 12.5px;
+    margin-top: 8px;
+    align-self: flex-start;
+}
+
+.bar3 {
+    margin-bottom: 8px;
+    width: 12.5px;
+    align-self: flex-end;
+}
+
+i {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+
+/* ============================================================== */
+.intro {
+    /* border: green solid 5px; */
+    margin: 80px auto 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-img {
+    text-align: center;
+    /* border: tomato solid 5px; */
+    margin-right: 10px;
+
+}
+
+.intro-img img{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    clip-path: circle();
+}
+
+.intro-text {
+    flex-basis: 75%;
+    padding: 0 10px;
+    /* border: steelblue solid 5px; */
+}
+
+h1 {
+    display: inline-block;
+    margin: 15px 10px 10px 0;
+    font-family: 'M PLUS 1 Code';
+    font-size: 2rem;
+    color: white;
+}
+
+
+/* ============================================================== */
+
+.line1 {
+    margin: 120px auto;
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(45deg, rgb(194, 105, 22), rgb(121, 36, 121));
+    opacity: 0.5;
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* ============================================================== */
+
+.second-section {
+    margin: 0 auto 80px auto;
+    /* border: white 5px solid; */
+    width: 90%;
+    max-width: 1100px;
+}
+
+.second-section h2 {
+    font-size: 1.6rem;
+    font-family: 'Share Tech Mono';
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.second-section .title {
+    text-align: center;
+}
+
+.options {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options .box {
+    flex-basis: 28%;
+}
+
+.options h4 {
+    margin-bottom: 20px;
+    font-family: 'Share Tech Mono';
+    font-size: 1.4rem;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, rgb(194, 105, 22), rgb(121, 36, 121));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+p {
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.line2 {
+    margin: 120px auto 20px auto;
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(45deg, rgb(194, 105, 22), rgb(121, 36, 121));
+    opacity: 0.5;
+    width: 100%;
+    max-width: 1100px;
+}
+
+@media only screen and (max-width:768px) {
+/* menu */
+    header {
+        border: none;
+        background-color: transparent;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    header {
+        border: none;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        background-color: transparent;
+        justify-content: flex-end;
+    }
+
+    .navbar label {
+        display: none;
+        margin: 10px;
+    }
+
+    .navbar-items {
+        background-color: rgb(255, 255, 255);
+        display: none;
+    }
+
+    .item {
+        color: rgb(0, 0, 0);
+        border-top: solid 1px rgb(90, 90, 90) ;
+    }
+
+/* toggling */
+
+    .navbar.active {
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    .navbar-items.active {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .logo.active {
+        display: block;
+        order: -1;
+    }
+    .intro {
+        flex-direction: column;
+    }
+
+    .options {
+        flex-wrap: wrap;
+    }
+
+    .options .box {
+        flex-basis: 45%;
+    }
+
+    .box3 {
+        margin-top: 30px;
+    }
+    
+    hr {
+        margin: 5% auto;
+    }
+
+    .line1 {
+        margin: 50px auto;
+    }
+
+    .line2 {
+        margin: 50px auto 10px auto;
+    }
+
+    .second-section h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .hello {
+        text-align: center;
+    }
+    
+    .intro p, .intro h1 {
+        text-align: center;
+    }
+
+    .options {
+        flex-direction: column;
+    }
+
+    .options .box {
+        flex-basis: 100%;
+    }
+
+    .box {
+        margin-top: 30px;
+    }
+
+    .second-section h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
